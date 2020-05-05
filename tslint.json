@@ -1,0 +1,23 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "no-unused-expression": true,
+    "no-unnecessary-class": true,
+    "no-import-side-effect": true,
+    "max-line-length": [
+      true,
+      240
+    ]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {}
+}

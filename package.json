@@ -1,0 +1,40 @@
+{
+  "name": "delete-letter-queue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sls": "node_modules/.bin/sls",
+    "sls-info": "node_modules/.bin/sls info --verbose ",
+    "test": "node_modules/.bin/mocha \"./{,!(node_modules)/**/}*.spec.ts\" -t 10000 --colors --require ts-node/register --require mocha.env --require tsconfig-paths/register --reporter spec",
+    "package": "node_modules/.bin/sls package",
+    "run-offline": "IS_OFFLINE=true node_modules/.bin/sls offline start",
+    "deploy-dev": "node_modules/.bin/sls deploy --stage dev",
+    "deploy-prod": "node_modules/.bin/sls deploy --stage prod",
+    "deploy": "node_modules/.bin/sls deploy "
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@types/aws-lambda": "^8.10.51",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.5",
+    "api-gateway-stage-tag-plugin": "^1.0.6",
+    "babel-loader": "^8.1.0",
+    "serverless": "^1.69.0",
+    "serverless-offline": "^6.1.5",
+    "serverless-plugin-stage-variables": "^1.9.5",
+    "serverless-plugin-tracing": "^2.0.0",
+    "serverless-pseudo-parameters": "^2.5.0",
+    "serverless-webpack": "^5.3.2",
+    "ts-loader": "^7.0.2",
+    "ts-node": "^8.10.1",
+    "tsconfig-paths": "^3.9.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
